@@ -1,7 +1,0 @@
-# Garantir que /thanks acesse a página de agradecimento
-/thanks      /thanks.html   200!
-/thanks/     /thanks.html   200!
-/success     /thanks.html   301!
-
-# Redirecionamento SPA
-/*           /index.html    200 

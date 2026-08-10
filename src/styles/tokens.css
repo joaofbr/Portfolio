@@ -1,0 +1,38 @@
+:root {
+  --bg: #0a0a0c;
+  --surface: rgba(255, 255, 255, 0.022);
+  --surface-hover: rgba(255, 255, 255, 0.045);
+  --border: rgba(255, 255, 255, 0.07);
+  --border-strong: rgba(255, 255, 255, 0.12);
+
+  --text: #ededf0;
+  --text-soft: #a8a8b2;
+  --text-muted: #71717f;
+
+  --accent: #8b7cf6;
+  --accent-soft: #b6aaf9;
+  --accent-rgb: 139, 124, 246;
+
+  --font-display: 'Sora', 'Segoe UI', system-ui, sans-serif;
+  --font-body: 'Inter', 'Segoe UI', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, 'Cascadia Code', monospace;
+
+  --step--1: 0.82rem;
+  --step-0: clamp(0.95rem, 0.92rem + 0.15vw, 1rem);
+  --step-1: clamp(1.05rem, 1rem + 0.3vw, 1.2rem);
+  --step-2: clamp(1.25rem, 1.1rem + 0.6vw, 1.55rem);
+  --step-3: clamp(1.7rem, 1.35rem + 1.5vw, 2.5rem);
+  --step-4: clamp(2.2rem, 1.5rem + 3vw, 4rem);
+
+  --gutter: clamp(1.25rem, 5vw, 2rem);
+  --container: 1060px;
+  --section-y: clamp(4.5rem, 9vw, 7.5rem);
+
+  --radius-sm: 8px;
+  --radius: 12px;
+  --radius-lg: 16px;
+
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+
+  --nav-h: 64px;
+}

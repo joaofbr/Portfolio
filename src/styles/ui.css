@@ -1,0 +1,104 @@
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1.3rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border-strong);
+  color: var(--text);
+  font-size: 0.92rem;
+  font-weight: 500;
+  white-space: nowrap;
+  transition:
+    border-color 0.2s var(--ease-out),
+    background-color 0.2s var(--ease-out),
+    color 0.2s var(--ease-out);
+}
+
+.btn svg {
+  flex-shrink: 0;
+  font-size: 1.05em;
+}
+
+.btn:hover {
+  background-color: var(--surface-hover);
+  border-color: var(--border-strong);
+}
+
+.btn--primary {
+  border-color: transparent;
+  background-color: var(--accent);
+  color: #0b0a10;
+  font-weight: 600;
+}
+
+.btn--primary:hover {
+  background-color: var(--accent-soft);
+  border-color: transparent;
+}
+
+.btn--quiet {
+  border-color: transparent;
+  color: var(--text-soft);
+  padding-inline: 0.9rem;
+}
+
+.btn--quiet:hover {
+  color: var(--text);
+}
+
+.btn--sm {
+  padding: 0.5rem 1rem;
+  font-size: var(--step--1);
+}
+
+.btn--full {
+  width: 100%;
+}
+
+.btn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.65rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.to-top {
+  position: fixed;
+  right: clamp(1rem, 3vw, 1.75rem);
+  bottom: clamp(1rem, 3vw, 1.75rem);
+  z-index: 60;
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--border-strong);
+  background-color: #16161a;
+  color: var(--text-soft);
+  transition:
+    color 0.2s var(--ease-out),
+    border-color 0.2s var(--ease-out);
+}
+
+.to-top:hover {
+  color: var(--text);
+  border-color: var(--accent);
+}

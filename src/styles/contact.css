@@ -1,0 +1,180 @@
+.contact__grid {
+  display: grid;
+  gap: clamp(2rem, 5vw, 3rem);
+  align-items: start;
+}
+
+.contact__side {
+  border-top: 1px solid var(--border);
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  padding: 0.9rem 0;
+  border-bottom: 1px solid var(--border);
+  transition: color 0.2s var(--ease-out);
+}
+
+.contact-link:hover {
+  color: var(--accent-soft);
+}
+
+.contact-link__icon {
+  flex-shrink: 0;
+  font-size: 1.05rem;
+  color: var(--text-muted);
+}
+
+.contact-link__label {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.contact-link__value {
+  display: block;
+  font-size: 0.9rem;
+  word-break: break-word;
+}
+
+.contact-link__arrow {
+  margin-left: auto;
+  flex-shrink: 0;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.contact__form-wrap {
+  position: relative;
+}
+
+.contact__form {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.field__label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.field__input,
+.field__textarea {
+  width: 100%;
+  padding: 0.7rem 0.85rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background-color: rgba(255, 255, 255, 0.02);
+  color: var(--text);
+  font-size: 0.92rem;
+  transition: border-color 0.2s var(--ease-out);
+}
+
+.field__textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.field__input::placeholder,
+.field__textarea::placeholder {
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.field__input:focus,
+.field__textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.field--row {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.contact__note,
+.contact__error {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.45rem;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.contact__note svg,
+.contact__error svg {
+  flex-shrink: 0;
+  margin-top: 0.3em;
+}
+
+.contact__error {
+  color: #f0a0a0;
+}
+
+.contact__note code {
+  font-family: var(--font-mono);
+  font-size: 0.95em;
+  color: var(--text-soft);
+}
+
+.contact__success {
+  padding: 2.5rem 1.5rem;
+  text-align: center;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+}
+
+.contact__success-icon {
+  display: inline-grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  margin-bottom: 1rem;
+  border-radius: 50%;
+  border: 1px solid rgba(74, 222, 128, 0.35);
+  color: #4ade80;
+  font-size: 1.25rem;
+}
+
+.contact__success p {
+  max-width: 34ch;
+  margin: 0.5rem auto 1.5rem;
+  color: var(--text-soft);
+  font-size: 0.92rem;
+}
+
+.spinner {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 2px solid rgba(0, 0, 0, 0.25);
+  border-top-color: #0b0a10;
+  animation: spin 0.7s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (min-width: 560px) {
+  .field--row {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 880px) {
+  .contact__grid {
+    grid-template-columns: 1fr 0.62fr;
+  }
+}
