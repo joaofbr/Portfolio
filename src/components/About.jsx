@@ -7,7 +7,7 @@ export default function About() {
   return (
     <section id="sobre" className="section section--divided">
       <div className="container">
-        <SectionHead eyebrow="Sobre" title="Do IFRJ ao" accent="backend em produção" />
+        <SectionHead eyebrow="Sobre" title="Do IFRJ ao" accent="back-end em produção" />
 
         <div className="about__grid">
           <m.div className="about__text" {...reveal}>
